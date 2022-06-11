@@ -6,19 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Money Master</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
+    <!-- header -->
     <header>
         <h1 class="text-5xl text-center font-semibold mb-8 text-purple-700	 mt-4">My Money</h1>
     </header>
     <main>
         <section class="grid grid-cols-2 ">
+            <!-- image part -->
             <div class=" grid grid-cols-3/4 ml-20 mt- bg-gray-200">
                 <img class="mt-20 w-3/4 mr-16 ml-24" src="images/thumb-1920-24298.jpg" alt="">
             </div>
-
+            <!-- All input field and button -->
             <div class="bg-gray-200 mr-8 ml-8 px-16 mr-20">
                 <h2 class="px-32 font-bold text-2xl mt-8">Income</h2>
                 <div class="flex mt-4">
@@ -40,26 +43,43 @@
                     <h1 class="px-2 font-bold">Clothes :</h1>
                     <input id="cloth-input" class="border border-2 border-indigo-600 rounded" type="text"></input>
                 </div>
+
+                <!-- calculat error -->
+                <p id="error-1" class="text-danger">Please Enter a Valid Amount</p>
+
+                <!-- calculate button -->
                 <button id="calculate"
                     class="p-2 bg-green-400 text-center px-16 mt-6 font-bold text-2xl text-white rounded">calculate</button>
+
+                <!-- total expenses area -->
                 <div class="flex px-8 mt-6">
                     <h1 class="text-2xl font-bold">Total Expanses:</h1>
                     <h1 class="px-2 text-2xl font-bold"><span id="ex-total">00</span></h1>
                 </div>
+
+                <!-- balance area -->
                 <div class="flex px-8 mt-4">
                     <h1 class="text-2xl font-bold">Balance:</h1>
                     <h1 class="px-2 text-2xl font-bold"><span id="balance">00</span></h1>
                 </div>
+
+                <!-- saving button and saving input field -->
                 <div class="flex p-4 mt-8">
                     <h1 class="px-2  font-bold">save:</h1>
                     <input id="save-input" class="border border-2 border-indigo-600 rounded" type="text">
                     <h1 class="px-2 font-bold">%</h1>
                     <button id="save-button" class="p-2 bg-green-400 font-bold rounded text-white">Save</button>
                 </div>
+
+                <!-- savings error -->
+                <p id="error-2" class="mt-8 text-danger">Please Enter a Valid Amount</p>
+
+                <!-- savings amount -->
                 <div class="flex px-20 mt-6">
                     <h1 class="px-2 text-2xl font-bold">Saving Amount:</h1>
                     <h1 class="text-2xl font-bold"><span id="saving-amount">00</span></h1>
                 </div>
+                <!-- remaining balance -->
                 <div class="flex px-20 mt-6 mb-8">
                     <h1 class="px-2 text-2xl font-bold">Remaining Balance:</h1>
                     <h1 class="text-2xl font-bold"><span id="remaining-balance">00</span></h1>
