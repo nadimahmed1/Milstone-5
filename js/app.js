@@ -29,6 +29,7 @@ document.getElementById('calculate').addEventListener('click', function () {
 // savings amount part
 
 document.getElementById('save-button').addEventListener('click', function () {
+
     const saveParsentInput = document.getElementById('save-input');
     const saveInput = saveParsentInput.value;
     const savings = parseFloat(saveInput);
